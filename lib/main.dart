@@ -51,8 +51,8 @@ class _MyAppState extends State<MyApp> {
           0 => const Center(
               child: ProfilePage(),
             ),
-          1 => const Home(),
-          _ => const Email(),
+          1 => const HomePage(),
+          _ => const EmailPage(),
         },
       ),
     );

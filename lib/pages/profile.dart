@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../login/login.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -90,7 +91,13 @@ class ProfilePage extends StatelessWidget {
               const Spacer(),
               Center(
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginPage()),
+                    );
+                  },
                   child: const Text('Sign Out'),
                 ),
               ),

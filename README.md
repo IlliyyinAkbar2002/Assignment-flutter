@@ -34,6 +34,17 @@ This project is a Flutter application designed to demonstrate the use of a botto
 - **Responsive UI**: Each page is designed to be simple and responsive, with consistent styling using Flutter's `Material` components.
 - **State Management**: The application uses a `StatefulWidget` to manage the state of the selected index in the bottom navigation bar.
 
+## Screenshots
+
+### Home Page
+![Home Page](images/home.png)
+
+### Email Page
+![Email Page](images/email.png)
+
+### Profile Page
+![Profile Page](images/profile.png)
+
 ## Getting Started
 
 To run this Flutter application, ensure you have Flutter installed and set up on your machine. Then, use the following command to run the app:

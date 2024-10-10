@@ -37,13 +37,13 @@ This project is a Flutter application designed to demonstrate the use of a botto
 ## Screenshots
 
 ### Home Page
-![Home Page](images/home.png)
+![Home Page](images/log/home.png)
 
 ### Email Page
-![Email Page](images/email.png)
+![Email Page](images/log/email.png)
 
 ### Profile Page
-![Profile Page](images/profile.png)
+![Profile Page](images/log/profile.png)
 
 ## Getting Started
 

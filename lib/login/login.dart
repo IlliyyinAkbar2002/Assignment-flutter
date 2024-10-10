@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../pages/pagehome.dart';
 import '../home/landingpage.dart'; // Add a prefix here
+import '../register/register.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key}); // Use super.key to pass the key directly
@@ -93,7 +94,7 @@ class LoginPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            const LandingPage()), // Use the prefix here
+                            const RegisterPage()), // Use the prefix here
                   );
                 },
                 child: const Text("Don't have an account? Sign up now"),

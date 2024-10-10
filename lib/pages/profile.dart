@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../login/login.dart';
+import 'pagehome.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -13,12 +14,12 @@ class ProfilePage extends StatelessWidget {
           elevation: 0,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back, color: Colors.black),
-            onPressed: () {},
+            onPressed: () => Navigator.pop(context),
           ),
           actions: [
             IconButton(
               icon: const Icon(Icons.more_vert, color: Colors.black),
-              onPressed: () {},
+              onPressed: () => Navigator.pop(context),
             ),
           ],
         ),

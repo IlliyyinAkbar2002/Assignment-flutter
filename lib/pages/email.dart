@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
 
 class EmailPage extends StatelessWidget {
   const EmailPage({super.key});
+
+  // Initialize a logger
+  static final Logger _logger = Logger('EmailPage');
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +15,15 @@ class EmailPage extends StatelessWidget {
           backgroundColor: Colors.transparent,
           elevation: 0,
           title: const Text(
-            'Messages',
+            'Email',
             style: TextStyle(color: Colors.black, fontSize: 24),
           ),
           actions: [
             IconButton(
               icon: const Icon(Icons.search, color: Colors.black),
-              onPressed: () {},
+              onPressed: () {
+                _logger.info('Search icon pressed');
+              },
             ),
           ],
         ),

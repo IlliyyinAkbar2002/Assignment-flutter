@@ -1,72 +1,97 @@
 import 'package:flutter/material.dart';
 
-class I1201220033 extends StatelessWidget {
-  const I1201220033({super.key});
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var introd = "Welcome,";
-    var nama = "1201220033 - Illiyyin Akbar Ariyanto";
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-            'I1201220033',
-            style: TextStyle(color: Colors.white),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: Colors.black),
+            onPressed: () {},
           ),
-          backgroundColor: Colors.deepPurple,
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.more_vert, color: Colors.black),
+              onPressed: () {},
+            ),
+          ],
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              const Row(
                 children: [
+                  CircleAvatar(
+                    radius: 40,
+                    backgroundImage: AssetImage('images/me.jpg'),
+                  ),
+                  SizedBox(width: 16),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        introd,
-                        style: const TextStyle(
+                        'Illiyyin Akbar Ariyanto',
+                        style: TextStyle(
                           fontSize: 24,
-                          color: Colors.deepPurple,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        nama,
-                        style: const TextStyle(
-                          fontSize: 16,
-                          color: Colors.deepPurple,
+                        '1201220033',
+                        style: TextStyle(
+                          color: Colors.grey,
                         ),
                       ),
                     ],
                   ),
-                  Container(
-                    decoration: const BoxDecoration(
-                      color: Colors.green,
-                      shape: BoxShape.circle,
-                    ),
-                    width: 50,
-                    height: 50,
-                  ),
                 ],
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 40),
+              const Text(
+                'Profile',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.person),
+                title: const Text('Manage user'),
+                trailing: const Icon(Icons.arrow_forward_ios),
+                onTap: () {},
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                'Settings',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              ListTile(
+                leading: const Icon(Icons.notifications),
+                title: const Text('Notifications'),
+                trailing: const Icon(Icons.arrow_forward_ios),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: const Icon(Icons.dark_mode),
+                title: const Text('Dark Mode'),
+                trailing: const Icon(Icons.arrow_forward_ios),
+                onTap: () {},
+              ),
+              const Spacer(),
               Center(
-                child: Container(
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [Colors.blue, Colors.purple],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Sign Out'),
                 ),
               ),
             ],

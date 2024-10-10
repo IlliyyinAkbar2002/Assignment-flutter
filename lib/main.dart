@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: switch (selectedIndex) {
           0 => const Center(
-              child: I1201220033(),
+              child: ProfilePage(),
             ),
           1 => const Home(),
           _ => const Email(),

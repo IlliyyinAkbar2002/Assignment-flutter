@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../pages/pagehome.dart';
-import '../home/landingpage.dart'; // Add a prefix here
+// import '../home/landingpage.dart'; // Add a prefix here
 import '../register/register.dart';
 
 class LoginPage extends StatelessWidget {
